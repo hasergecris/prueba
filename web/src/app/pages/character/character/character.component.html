@@ -1,21 +1,25 @@
-<div class="header d-flex">
-<h1 class="name">{{character.name | uppercase}}</h1>
-</div>
-<hr>
-
-<div class="row animated fadein fast">
-  <div class="col-md-4">
-    <!-- <img src="{{character.image.url}}"  class="img-Fluid"> -->
-    <br><br>
-    
+<div class="container py-4">
+  <div class="header d-flex mt-4"> 
+  <h1 class="titulo2">{{character.breeds[0].name | uppercase}}</h1> 
   </div>
-
-  <div class="col-md-8">
-    <h2></h2>
-    <hr>
-    <!-- <p class="parrafo">{{}}</p> -->
-
-    
-
+  <hr>
+  
+  <div class="row d-flex">
+    <div class="col-md-5">
+      <img src="{{character.url}}"  class="img-Fluid">
+      <br><br>
+    </div>
+      
+  
+    <div class="col-md-7">
+      <p class="parrafo">{{character.breeds[0].description}}</p>
+      <h2 class="temperament">{{character.breeds[0].temperament}}</h2>
+      <h3 class="origin">{{ character.breeds[0].origin }}</h3>
+      <h4 class="life_span">{{character.breeds[0].life_span}}</h4>
+    </div>
   </div>
+  
 </div>
+      
+  
+

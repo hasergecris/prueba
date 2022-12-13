@@ -5,9 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ServicioGeneralService {
-  constructor(private http: HttpClient) {
-    console.log('servicio listo para usar');
-  }
+  constructor(private http: HttpClient) {}
 
   getAll(limit: number) {
     return this.http.get(`https://api.thecatapi.com/v1/breeds?limit=${limit}`);

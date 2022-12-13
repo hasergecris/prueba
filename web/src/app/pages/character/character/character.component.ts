@@ -15,16 +15,15 @@ export class CharacterComponent implements OnInit {
     private _ServicioGeneral: ServicioGeneralService
   ) {
     this.activatedRouted.params.subscribe((params) =>{
-      console.log(params['id']);
-      this.character = this._ServicioGeneral
+      this._ServicioGeneral
         .getCat(params['id'])
         .subscribe((data: any) => {
-          console.log('caracter',data);
-          
+          this.character = data 
         });
-    });
-
+      });
+    }
+    ngOnInit(): void {}
   }
+          
 
-  ngOnInit(): void {}
-}
+

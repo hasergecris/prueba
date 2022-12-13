@@ -13,13 +13,11 @@ export class BuscardorComponent implements OnChanges {
 
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('cambio limite', changes);
   }
 
   increment() {
     this.limit++;
-    console.log('numero limit', this.limit);
     this.sendLimit.emit(this.limit);
-
   }
 }
+

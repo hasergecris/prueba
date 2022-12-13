@@ -7,15 +7,7 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 export class GatosComponent implements OnChanges {
   @Input() cats: any = [];
 
-  constructor() {
-    console.log('la data de gatos 1', this.cats);
-  }
+  constructor() {}
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('cambio limite', changes);
-  }
-
-  
-
- 
+  ngOnChanges(changes: SimpleChanges): void {}
 }
