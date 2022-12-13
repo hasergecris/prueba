@@ -1,0 +1,21 @@
+    <div class="container py-5">
+      <div class="row"  data-masonry='{"percentPosition": true }'style="position: relative; height: 690px;" >
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let cat of cats; let i = index" >
+          <a class="card card_principal" id= "{{cat.id}}" [routerLink]="['/character',i]">
+            <img class="card-img-top" src= {{cat.image.url}} alt="">
+            <div class="card-body">
+              <h1 class="name">{{cat.name}}</h1>
+              <h3 class="origin">{{ cat.origin }}</h3>
+              <h4 class="life_span">{{cat.life_span}}</h4>
+            </div>
+          </a>
+        </div>
+      </div> 
+    </div>
+            
+
+
+
+
+  
+          
