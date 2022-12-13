@@ -9,7 +9,7 @@ import { ServicioGeneralService } from 'src/app/services/servicio-general.servic
 })
 export class CharacterComponent implements OnInit {
   character: any = {};
-cat: any;
+  cat: any;
   constructor(
     private activatedRouted: ActivatedRoute,
     private _ServicioGeneral: ServicioGeneralService
